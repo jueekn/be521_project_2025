@@ -39,14 +39,14 @@ be521_project_2025/
 ```bash
 pip install -r requirements.txt
 
-# (once) train the models — needs raw_training_data.mat from the competition
+# Train the models once. Needs raw_training_data.mat 
 python training/train.py --data raw_training_data.mat --device cpu   # or --device cuda
 
 streamlit run app.py
 ```
 
-Upload a `.mat` file containing an ECoG array (samples × channels) — either a
-single array or a cell array of subjects like `leaderboard_data.mat` — pick the
+Upload a `.mat` file containing an ECoG array of shape samples × channels (either a
+single array or a cell array of subjects like `leaderboard_data.mat`) pick the
 matching subject model, and the app plots the predicted flexion of all five
 fingers and offers the predictions as CSV / `.mat`.
 
