@@ -1,0 +1,12 @@
+.git
+.gitignore
+__pycache__
+**/__pycache__
+*.pyc
+.venv
+venv
+*.mat
+project_files/
+training/
+BCI_Final_Project_Report.pdf
+README.md
